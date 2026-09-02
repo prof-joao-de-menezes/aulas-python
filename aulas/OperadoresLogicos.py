@@ -32,3 +32,7 @@ print(idade > 18)  # False
 print(idade < 18)  # False
 print(idade >= 18) # True
 
+print("Joao", idade, False)
+
+
+
