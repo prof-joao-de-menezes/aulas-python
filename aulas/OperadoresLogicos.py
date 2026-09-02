@@ -26,13 +26,8 @@
 
 idade = 18
 
-print(idade != 18) # False
-print(idade == 18) # True
-print(idade > 18)  # False
-print(idade < 18)  # False
-print(idade >= 18) # True
-
-print("Joao", idade, False)
-
-
-
+# print(idade != 18) # False
+# print(idade == 18) # True
+# print(idade > 18)  # False
+# print(idade < 18)  # False
+# print(idade >= 18) # True
