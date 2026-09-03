@@ -1,6 +1,5 @@
 # TIPOS DE DADOS
 #nossos códigos serão escrito aqui
-from time import process_time_ns
 
 #PYTHON É CASE SENSITIVE -> A a
 
