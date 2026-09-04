@@ -10,9 +10,7 @@ porcentagem_frequen_min =(200 * 75) / 100 # 150
 frequencia_do_aluno = (frequencia_digitada * 100) / 200
 
 if frequencia_do_aluno >= 75 and media >= 7.0:
-    print(f"A média do aluno foi: {media:.2f}."
-          f"\nA frequencia do aluno foi: %{frequencia_do_aluno}."
-          f"\nEle foi APROVADO com sucesso.")
+    print(f"A média do aluno foi: {media:.2f}.\nA frequencia do aluno foi: %{frequencia_do_aluno}.\nEle foi APROVADO com sucesso.")
 else:
     print(f"A média do aluno foi: {media:.2f}."
           f"\nA frequencia do aluno foi: %{frequencia_do_aluno}."
