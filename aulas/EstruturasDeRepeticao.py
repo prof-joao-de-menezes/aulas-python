@@ -1,7 +1,15 @@
 # REPETIÇÃO WHILE -> Enquanto
+# while (comparação ou valor boleano)
+# Executava caso fosse verdadeiro (True)
+
+
+
+
+
 # Estruturas de repetição
 # Laços de repetição
 # Loop
+from os import remove
 
 # ano_nascimento = 2004
 # ano_final = 2077
@@ -23,27 +31,61 @@
 #     seu_nome = input("Digite seu nome novamente: ")
 
 
-fichas = 2
-while fichas != 0: # sistema da maquina do fliperama
-    tentativas = 3
+# fichas = 2
+# while fichas != 0: # sistema da maquina do fliperama
+#     tentativas = 3
+#
+#     print(f"Você tem {fichas} quantidade de fichas.")
+#     while True: # sistema do jogo do fliperama
+#         print(f"Você tem {tentativas} tentativas.")
+#         opcao = input("Escolha uma opção:")
+#         if opcao == "b":
+#             print("Você ganhou!")
+#             fichas = 0
+#             break
+#         elif tentativas == 1:
+#             print("Você perdeu")
+#             break
+#         else:
+#             tentativas -= 1
+#
+#     fichas -= 1
+#     if fichas <= 0:
+#         break
 
-    print(f"Você tem {fichas} quantidade de fichas.")
-    while True: # sistema do jogo do fliperama
-        print(f"Você tem {tentativas} tentativas.")
-        opcao = input("Escolha uma opção:")
-        if opcao == "b":
-            print("Você ganhou!")
-            fichas = 0
-            break
-        elif tentativas == 1:
-            print("Você perdeu")
-            break
-        else:
-            tentativas -= 1
 
-    fichas -= 1
-    if fichas <= 0:
-        break
+
+#REPETIÇÃO FOR (para)
+
+# for (item) in (lista de valores):
+
+lista_alunos = ["Joao", "Felipe", "Alberto"]
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 

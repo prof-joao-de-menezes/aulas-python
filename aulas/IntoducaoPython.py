@@ -54,6 +54,20 @@ print(type(resultado_comparacao))
 print(type(valor))
 print(type(valor_inteiro))
 
+#criando uma lista
+#             index    0         1         2
+lista_de_alunos = ["aluno1", "aluno2", "aluno3"] # mutavel
+print(lista_de_alunos)
+
+lista_de_alunos.append("aluno4") # modificação em execução
+
+# MODIFICANDO VALORES DENTRO DA LISTA
+lista_de_alunos[0] = "Fulano"
+lista_de_alunos[1] = "Ciclano"
+lista_de_alunos[2] = "Beltrano"
+lista_de_alunos[3] = "Jãozinho"
+
+print(lista_de_alunos)
 
 
 
