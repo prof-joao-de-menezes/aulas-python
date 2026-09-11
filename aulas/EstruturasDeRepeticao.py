@@ -55,50 +55,50 @@ from os import remove
 
 # for (item -> variável temporária) in (lista de valores):
 #         index   0        1         2
-lista_alunos = []
-num_aluno = 0
-num_aluno_final = 0
-
-print("ADICIONANDO ALUNOS NA LISTA DE CHAMADA")
-while True: # sisitema de adição
-    while True: # adicionar alunos
-        aluno = input("Digite o nome do aluno: ")
-        lista_alunos.append(aluno)
-
-        opcao = input("Deseja continuar? [S/N]: ") #finalizar adição
-        if opcao == "N":
-            break
-
-    print("Lista atual dos alunos.")
-    for i in lista_alunos: # imprime a lista de alunos total
-        print(f"Nome do aluno {num_aluno}: {i}")
-        num_aluno += 1
-
-    print("Escolha uma opção:")
-
-    opcao_match = input("a) apagar um aluno da chamada\n"
-                        "b) adicionar um aluno da chamada\n"
-                        "c) finalizar o programa\n")
-
-    match opcao_match:
-        case 'a':
-            aluno_apagado = input("Digite o nome do aluno que deseja apagar: ")
-            lista_alunos.remove(aluno_apagado)
-            break
-        case 'b':
-            aluno_adicionado = input("Digite o nome do aluno que deseja adicionar: ")
-            lista_alunos.append(aluno_adicionado)
-            break
-        case _:
-            break
-
-print("A sua turma ficou com todos esses alunos:")
-for i in lista_alunos: # imprime a lista de alunos total
-    print(f"Nome do aluno {num_aluno_final}: {i}")
-    num_aluno_final += 1
-
-# LISTA CONJUNTA
-
+# lista_alunos = []
+# num_aluno = 0
+# num_aluno_final = 0
+#
+# print("ADICIONANDO ALUNOS NA LISTA DE CHAMADA")
+# while True: # sisitema de adição
+#     while True: # adicionar alunos
+#         aluno = input("Digite o nome do aluno: ")
+#         lista_alunos.append(aluno)
+#
+#         opcao = input("Deseja continuar? [S/N]: ") #finalizar adição
+#         if opcao == "N":
+#             break
+#
+#     print("Lista atual dos alunos.")
+#     for i in lista_alunos: # imprime a lista de alunos total
+#         print(f"Nome do aluno {num_aluno}: {i}")
+#         num_aluno += 1
+#
+#     print("Escolha uma opção:")
+#
+#     opcao_match = input("a) apagar um aluno da chamada\n"
+#                         "b) adicionar um aluno da chamada\n"
+#                         "c) finalizar o programa\n")
+#
+#     match opcao_match:
+#         case 'a':
+#             aluno_apagado = input("Digite o nome do aluno que deseja apagar: ")
+#             lista_alunos.remove(aluno_apagado)
+#             break
+#         case 'b':
+#             aluno_adicionado = input("Digite o nome do aluno que deseja adicionar: ")
+#             lista_alunos.append(aluno_adicionado)
+#             break
+#         case _:
+#             break
+#
+# print("A sua turma ficou com todos esses alunos:")
+# for i in lista_alunos: # imprime a lista de alunos total
+#     print(f"Nome do aluno {num_aluno_final}: {i}")
+#     num_aluno_final += 1
+#
+# # LISTA CONJUNTA
+#
 #   index    0       1          2
 alunos = ["Joao", "Fulano", "Ciclano"]
 # index   0  1  2
@@ -126,6 +126,17 @@ for turma in turma_python:
                 print(f"E teve {index} faltas")
 
 
+#                  0                1              0
+funcionarios = ["Funcionario1", "Funcionario2", "Funcionario3"]
+
+funcionarios.append(input("Digite o nome do funcionario: "))
+
+aumento = [funcionarios[0]]
+demitido = [funcionarios[1], funcionarios[2]]
+
+print(funcionarios)
+print(aumento)
+print(demitido)
 
 
 
