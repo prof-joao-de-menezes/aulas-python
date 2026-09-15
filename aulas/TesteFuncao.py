@@ -2,7 +2,7 @@
 #      biblioteca
 from aulas.Funcoes import soma, olaUsuario # hierarquia
 
-olaUsuario("João")
+olaUsuario("João", 22)
 
 while True:
     valor = soma()

@@ -13,9 +13,13 @@ def subtracao():
     print(numero1 - numero2)
     return
 
-def olaUsuario(nome):
+def olaUsuario(nome, idade):
     print(f"Olá {nome}")
+    print(f"Sua idade {idade}")
 
+
+class Nome:
+    nome = "Marcelo"
 
 
 
