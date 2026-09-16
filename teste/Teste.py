@@ -1,4 +1,4 @@
-from aulas.Funcoes import Nome
+from aulas.programacao_estruturada.Funcoes import Nome
 
 class Funcionario: # criar uma nova classe
     nome = "João"  # atributo -> dentro de classe
