@@ -1,2 +1,2 @@
 class Carro:
-    pass
+    def __init__(self, ):
