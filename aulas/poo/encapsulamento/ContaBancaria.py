@@ -1,9 +1,11 @@
+# FORMA CONVENCIONAL NÃO UTILIZADA NO PYTHON
 class ContaBancaria: # nome da classe
     def __init__(self, titular, saldo): # metodo construtor
         self.titular = titular # self.atributo = valor do parametro
         self.__saldo = saldo # private
 
     # metodos Getters e Setters (Get = Pegar e Set = Inserir)
+    # METODOS CONVENCIONAIS
     def get_titular(self):
         senha = 1234
         senha_digitada = int(input('(GET) Digite sua senha: '))
@@ -22,7 +24,6 @@ class ContaBancaria: # nome da classe
             return 'Titular atualizada!'
         else:
             return 'Senha incorreta!'
-
 
 conta_banco = ContaBancaria("João", 10000)
 #print(conta_banco.titular) # Acesso diretamente o atributo
