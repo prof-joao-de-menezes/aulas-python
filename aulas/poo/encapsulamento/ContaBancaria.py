@@ -62,7 +62,6 @@ class ContaBancariaCorreta: # LÓGICA UTILIZADA NO PYTHON de get e set
             print(f'Saldo atual: {self.saldo}')
             print(f"Valor de transeferencia {valor_transfer}")
             print("Saldo insuficiente")
-
 usuario_banco_correto = ContaBancariaCorreta("Jose", 500)
 print("Saldo: ", usuario_banco_correto.saldo)
 
