@@ -10,9 +10,9 @@ class Produto:
         else:
             print("Erro: quantidade inválida.")
 
-objeto_produto = Produto("Shampoo",
-                         10.00,
-                         50)
-print(objeto_produto.__dict__)
-objeto_produto.adicinar_estoque(-100)
-print(objeto_produto.__dict__)
+shampoo = Produto("Shampoo",
+                  10.00,
+                  50)
+print(shampoo.__dict__)
+shampoo.__quantidade_estoque = -50
+shampoo.__preco = -100
