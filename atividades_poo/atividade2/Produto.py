@@ -13,6 +13,9 @@ class Produto:
 shampoo = Produto("Shampoo",
                   10.00,
                   50)
-print(shampoo.__dict__)
+
+# PRIMEIRO TESTE OBRIGATÓIO
 shampoo.__quantidade_estoque = -50
 shampoo.__preco = -100
+
+print(shampoo.__dict__)
