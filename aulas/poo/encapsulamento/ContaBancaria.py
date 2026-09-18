@@ -28,8 +28,9 @@ class ContaBancaria: # nome da classe
 
 class ContaBancariaCorreta: # LÓGICA UTILIZADA NO PYTHON de get e set
     def __init__(self, titular, saldo):
-        self.titular = titular
-        self.__saldo = saldo # private
+        self.titular = titular # public
+        self.__saldo = saldo   # private
+
 
     @property # anotation -> anotação
     def saldo(self): # funciona como o GET
@@ -59,20 +60,12 @@ class ContaBancariaCorreta: # LÓGICA UTILIZADA NO PYTHON de get e set
             print(f'Quantidade transferida: {valor_transfer}')
             self.saldo -= valor_transfer
         else:
-            print(f'Saldo atual: {self.saldo}')
+            print(f'Saldo atual: {self.__saldo}')
             print(f"Valor de transeferencia {valor_transfer}")
             print("Saldo insuficiente")
 usuario_banco_correto = ContaBancariaCorreta("Jose", 500)
-print("Saldo: ", usuario_banco_correto.saldo)
 
-print("Adicinando fundos ao banco")
-usuario_banco_correto.saldo = 5000
-usuario_banco_correto.__saldo = -100000
+usuario_banco_correto.titular = "Menezes"
+usuario_banco_correto.__saldo = 1000
 
-print("Saldo: ", usuario_banco_correto.saldo)
-usuario_banco_correto.sacar(1000)
-print("Saldo: ", usuario_banco_correto.saldo)
-usuario_banco_correto.transferir(1000)
-print("Saldo: ", usuario_banco_correto.saldo)
-usuario_banco_correto.transferir(10000)
 print(usuario_banco_correto.__dict__)
