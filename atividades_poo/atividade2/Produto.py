@@ -1,5 +1,18 @@
-class Produto:
+class Loja: # classe pai
+    def __init__(self, nome_loja):
+        self.__nome_loja = nome_loja
+
+    @property
+    def nome_loja(self):
+        return self.__nome_loja
+    @nome_loja.setter
+    def nome_loja(self, nome_loja):
+        self.__nome_loja = nome_loja
+
+# HERANÇA
+class Produto(Loja): # classe filha
     def __init__(self, nome, preco, quantidade_estoque):
+        super().__init__(nome_loja="Atacadão")
         self.__nome = nome
         self.__preco = preco
         self.__quantidade_estoque = quantidade_estoque
@@ -34,15 +47,21 @@ class Produto:
         else:
             print("Erro: quantidade inválida.")
 
-shampoo = Produto("Shampoo",
-                  10.00,
-                  50)
 
-# PRIMEIRO TESTE OBRIGATÓIO
-shampoo.__quantidade_estoque = -50
-shampoo.__preco = -100
+class Comprador:
+    def __init__(self, nome, produdo_comprado):
+        self.__nome = nome
+        self.__produdo_comprado = produdo_comprado
 
-print(shampoo.__dict__)
+    compra = Produto("Shampoo",
+                     30.00,
+                     100)
 
-shampoo.nome = "Nivea"
-print(shampoo.__dict__)
+    compra.nome_loja = "Açai atacadista"
+    print(compra.__dict__)
+
+    outra_compra = Produto("Carro",
+                     300000.00,
+                     1)
+    outra_compra.nome_loja = "Honda"
+    print(outra_compra.__dict__)
