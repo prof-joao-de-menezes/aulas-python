@@ -1,11 +1,13 @@
+# PRECISA IMPORTAR PARA CRIAR CLASSE ABSTRATA
 from abc import ABC, abstractmethod
-# Abstract Base Class
+# ABC -> Abstract Base Class
+# abstractmethod -> Anotação dentro de abc
 
-# classe PAI
+# classe PAI -> Geralmente abstrata
 # DEFINIR INTERFACE
 class Pagamento(ABC): # Classe ABSTRATA
     @abstractmethod
-    def pagar(self, valor: float): # metodo ABSTRATO
+    def pagar(self, valor): # metodo ABSTRATO
         # Defino a INTERFACE
         # NÃO defino sua IMPLEMENETAÇÃO
         pass
@@ -37,11 +39,21 @@ class Cartao(Pagamento):
 
 # DEFINO AS IMPLEMENTAÇÕES
 class Principal:
-    #                           classe(Pagamento)   float
-    def efetuar_pagamento(self, Pagamento, valor):
-        print(f"Efetuando pagamento")
-        Pagamento.pagar(valor)
-        print("Pagamento efetuado com sucesso!")
+    #                                       classe     atributo
+    def efetuar_pagamento(metodo_pagamento: Pagamento, valor: float):
+        print(f"Efetuando pagamento...")
+        metodo_pagamento.pagar(valor)
+        print("Pagamento efetuado com sucesso!\n")
 
     print("====== EFETUANDO PAGAMENTOS ======")
-    efetuar_pagamento(Pix(), 100.00)
+    lista_pagamentos = [
+        (Pix(), 250), # index 0 (Classe, atributo)
+        (Cartao(), 100.00),
+        (Boleto(), 5000.00)
+    ]
+
+    #       Classe       atributo
+    for metodo_pagamento, valor in lista_pagamentos:
+        efetuar_pagamento(metodo_pagamento, valor)
+
+
