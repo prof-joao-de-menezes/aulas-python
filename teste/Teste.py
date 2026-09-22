@@ -1,11 +1,16 @@
-from aulas.programacao_estruturada.Funcoes import Nome
+from abc import ABC
 
-class Funcionario: # criar uma nova classe
-    nome = "João"  # atributo -> dentro de classe
+class Pagamento(ABC):
+    def pagar(self, valor):
+        pass
 
-# FORA DA CLASSE
-nome = "Felipe" # variável -> fora de classe
 
-print(nome) # Variável normal
-print(Funcionario.nome) # INSTÂNCIA
-print(Nome.nome) # INSTÂNCIA
+class Pix(Pagamento):
+    def pagar(self, valor):
+        print(f"Pagando {valor} via pix")
+
+
+class Cartao(Pagamento):
+    def pagar(self, valor):
+        print(f"Pagando {valor} via cartão")
+
