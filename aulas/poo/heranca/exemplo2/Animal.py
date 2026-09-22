@@ -10,8 +10,11 @@ class Animal():
         return self._tipo
 
     @tipo.setter
-    def tipo(self, tipo):
-        self._tipo = tipo
+    def tipo(self, tipo_digitado):
+        if tipo_digitado == "":
+            print("Nome digitado errado")
+        else:
+            self._tipo = tipo_digitado
 
     @property
     def idade(self):
