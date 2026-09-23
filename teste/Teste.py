@@ -11,6 +11,5 @@ class Pix(Pagamento):
 
 
 class Cartao(Pagamento):
-    def pagar(self, valor):
+    def pagar(self, valor: float):
         print(f"Pagando {valor} via cartão")
-
