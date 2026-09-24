@@ -1,15 +1,13 @@
-from abc import ABC
+class Teste:
+    def __init__(self, nome):
+        self.__nome = nome
 
-class Pagamento(ABC):
-    def pagar(self, valor):
-        pass
+    @property
+    def nome(self):
+        return self.__nome
 
+obj = Teste("João")
 
-class Pix(Pagamento):
-    def pagar(self, valor):
-        print(f"Pagando {valor} via pix")
+obj._Teste__nome = "Felipe"
 
-
-class Cartao(Pagamento):
-    def pagar(self, valor: float):
-        print(f"Pagando {valor} via cartão")
+print(obj.__dict__)
