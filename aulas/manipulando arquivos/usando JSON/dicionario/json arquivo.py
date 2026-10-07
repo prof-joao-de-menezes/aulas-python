@@ -49,7 +49,6 @@ for produto in novo_dicionario:
         produto['em_estoque'] = False
         produto['preco'] = 19.99
         produto['tipo'] = "Vegetal"
-
     print(produto['preco'])
 
 with open('json_file.json', 'w', encoding='utf-8') as arquivo:

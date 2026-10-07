@@ -1,0 +1,25 @@
+{
+    "nomeLoja": "TechStore",
+    "produtos": [
+        {
+            "nome": "mouse",
+            "preco": 50.0,
+            "quantidade": 10
+        },
+        {
+            "nome": "teclado",
+            "preco": 90.0,
+            "quantidade": 5
+        },
+        {
+            "nome": "teclado mecânico",
+            "preco": 200.0,
+            "quantidade": 10
+        },
+        {
+            "nome": "monitor 4k",
+            "preco": 500.0,
+            "quantidade": 15
+        }
+    ]
+}
