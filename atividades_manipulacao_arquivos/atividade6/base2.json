@@ -1,0 +1,30 @@
+[
+    {
+        "cargo": "Designer",
+        "setor": "Marketing",
+        "empresa": "Tech Solutions",
+        "nome": "Mariana Lima",
+        "aniversario": "28/05/1999"
+    },
+    {
+        "cargo": "Desenvolvedor Backend",
+        "setor": "Tecnologia",
+        "empresa": "Tech Solutions",
+        "nome": "Pedro Almeida",
+        "aniversario": "12/09/1996"
+    },
+    {
+        "cargo": "Analista Financeiro",
+        "setor": "Financeiro",
+        "empresa": "Tech Solutions",
+        "nome": "Fernanda Rocha",
+        "aniversario": "07/12/1994"
+    },
+    {
+        "cargo": "Suporte Técnico",
+        "setor": "Tecnologia",
+        "empresa": "Tech Solutions",
+        "nome": "Lucas Martins",
+        "aniversario": "19/02/2001"
+    }
+]

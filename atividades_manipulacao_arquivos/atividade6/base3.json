@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Rafael Mendes",
+        "cargo": "Desenvolvedor Frontend",
+        "tempo_empresa": 3,
+        "aniversario": "25/08/1997"
+    },
+    {
+        "nome": "Camila Ferreira",
+        "cargo": "Product Owner",
+        "tempo_empresa": 5,
+        "aniversario": "14/04/1993"
+    },
+    {
+        "nome": "Gabriel Alves",
+        "cargo": "Administrador de Banco de Dados",
+        "tempo_empresa": 2,
+        "aniversario": "30/10/1998"
+    },
+    {
+        "nome": "Beatriz Carvalho",
+        "cargo": "Analista de Qualidade",
+        "tempo_empresa": 4,
+        "aniversario": "06/06/1996"
+    }
+]

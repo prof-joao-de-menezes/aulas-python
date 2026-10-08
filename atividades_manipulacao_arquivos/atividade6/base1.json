@@ -1,0 +1,26 @@
+[
+    {
+        "nome": "Ana Souza",
+        "aniversario": "15/03/1998",
+        "cargo": "Desenvolvedora",
+        "salario": 4500
+    },
+    {
+        "nome": "Bruno Oliveira",
+        "aniversario": "22/07/1995",
+        "cargo": "Analista de Sistemas",
+        "salario": 5200
+    },
+    {
+        "nome": "Carlos Santos",
+        "aniversario": "10/11/2000",
+        "cargo": "Estagiário",
+        "salario": 1800
+    },
+    {
+        "nome": "Juliana Costa",
+        "aniversario": "03/01/1997",
+        "cargo": "Gerente de Projetos",
+        "salario": 6800
+    }
+]
