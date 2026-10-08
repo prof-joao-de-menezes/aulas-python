@@ -1,9 +1,19 @@
-class Valor:
-    def __init__(self, valor):
-        try:
-            self.valor = float(valor)
-        except ValueError:
-            print("Valor não aceito")
+dicionario_frutas = {
+    "frutas": [
+        {
+            "nome": "maça",
+            "tipo": []
 
+        },
+        {
+            "nome": "banana",
+            "tipo": ["prata", "nanica", "maça", "da terra"],
+        }
+    ]
+}
 
-valor1 = Valor("Vinte e três")
+# toda vez que for utilizar o for, percorremos um tipo de lista
+for produto in dicionario_frutas["frutas"]:
+    print(produto['nome'])
+    for tipo in produto['tipo']:
+        print(f'Tipo: banana {tipo}')
