@@ -1,19 +1,5 @@
-dicionario_frutas = {
-    "frutas": [
-        {
-            "nome": "maça",
-            "tipo": []
+import requests
 
-        },
-        {
-            "nome": "banana",
-            "tipo": ["prata", "nanica", "maça", "da terra"],
-        }
-    ]
-}
+response = requests.get('https://pokeapi.co/api/v2/pokemon/4/')
 
-# toda vez que for utilizar o for, percorremos um tipo de lista
-for produto in dicionario_frutas["frutas"]:
-    print(produto['nome'])
-    for tipo in produto['tipo']:
-        print(f'Tipo: banana {tipo}')
+print(response.json())

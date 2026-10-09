@@ -15,7 +15,7 @@ def adicionar_aluno():
     # escrita -> 'w' ->  sobreescreve tudo no documento pela linha nova
     # escrita -> 'a' -> adiciona uma linha novas
     # leitura -> 'r' -> lê tudo no documento.txt como STRING
-    with open('alunos.txt', 'w', encoding='utf-8') as arquivo:
+    with open('alunos.txt', 'a', encoding='utf-8') as arquivo:
         arquivo.write(f"{nome};{turma};{nota_1bim};{nota_2bim};{nota_3bim};{nota_4bim};"
                       f"{status}\n")
 
