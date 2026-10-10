@@ -1,5 +1,5 @@
 import requests
 
-response = requests.get('https://pokeapi.co/api/v2/pokemon/4/')
+response = requests.delete('https://viacep.com.br/ws/01001000/json/')
 
-print(response.json())
+print(response)
