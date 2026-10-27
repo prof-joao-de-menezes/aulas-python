@@ -1,4 +1,4 @@
 nome,cpf,salario,telefone
 João de Menezes,12345678978,dez mil reais,# $ *(){
 Victor Sousa,11122233344,"5.000,88",+55 62 12345-1234
-Marcelo Oliveira,000 333 333-99,1000.99,63 1111-1111
+Marcelo Oliveira,cpf,1000.99,63 1111-1111

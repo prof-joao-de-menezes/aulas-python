@@ -15,7 +15,7 @@ df_dados_incompletos = pd.DataFrame([
     },
     {
         "nome": "Marcelo Oliveira",
-        "cpf": "000 333 333-99",
+        "cpf": "cpf",
         "salario": 1000.9900,
         "telefone": "63 1111-1111"
     }
@@ -51,7 +51,7 @@ dados_telefone_formatados = (
 )
 
 dados.insert(7, "telefone_formatado", dados_telefone_formatados)
-dados["telefone_validado"] = (dados['telefone_formatado'].str.fullmatch(r"\d{10,11}"))
+dados["telefone_validado"] = (dados['telefone_formatado'].str.fullmatch(r"\d{10,13}"))
 
 print(dados.to_string())
 

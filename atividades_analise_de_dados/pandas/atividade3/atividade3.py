@@ -36,16 +36,16 @@ for index, linha in df_dados_despadronizados.iterrows():
         df_dados_despadronizados.at[index, 'cpf_formatado'] = novo_cpf
         df_dados_despadronizados.at[index, 'cpf'] = novo_cpf
 
-    if pd.isna(df_dados_despadronizados.at[index, "salario_formatado"]):
+    if pd.isna(linha["salario_formatado"]):
         while True:
-            print(f'O funcionário {df_dados_despadronizados.at[index, "nome"]} está sem SALÁRIO.')
+            print(f'No index {index} o {df_dados_despadronizados.at[index, "nome"]} está sem SALÁRIO.')
             try:
                 novo_salario = input("Digite o salário do funcionário: ")
-                df_dados_despadronizados.at[index, "salario_formatado"] = float(novo_salario)
-                df_dados_despadronizados.at[index, "salario"] = novo_salario
+                df_dados_despadronizados.at[index, 'salario_formatado'] = float(novo_salario)
+                df_dados_despadronizados.at[index, 'salario'] = str(novo_salario)
                 break
             except ValueError:
-                print("Digite um salário válido usando números!")
+                print("Digite apenas números no salário!")
 
     if pd.isna(linha["numero_formatado"]):
         print(f'No index {index} o {df_dados_despadronizados.at[index,"nome"]} está sem NÚMERO CADASTRADO.')
