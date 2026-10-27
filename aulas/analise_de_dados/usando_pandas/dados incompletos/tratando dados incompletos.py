@@ -5,19 +5,25 @@ df_dados_incompletos = pd.DataFrame([
         "nome": "João de Menezes",
         "cpf": "12345678978",
         "salario": "dez mil reais",
-        "telefone": "# $ *(){"
+        "telefone": "# $ *(){",
+        "modelo_trabalho": "presencial",
+        "data_admissao": "10/10/2026"
     },
     {
         "nome": "Victor Sousa",
         "cpf": 11122233344,
         "salario": "5.000,88",
-        "telefone": "+55 62 12345-1234"
+        "telefone": "+55 62 12345-1234",
+        "modelo_trabalho": "hibrido",
+        "data_admissao": "4/6/2020"
     },
     {
         "nome": "Marcelo Oliveira",
         "cpf": "cpf",
         "salario": 1000.9900,
-        "telefone": "63 1111-1111"
+        "telefone": "63 1111-1111",
+        "modelo_trabalho": "",
+        "data_admissao": "4/6/2026"
     }
 ])
 
@@ -44,8 +50,6 @@ dados_salario_formatados = pd.to_numeric(dados_salario_formatados, errors="coerc
 
 dados.insert(5, "salario_formatado",dados_salario_formatados)
 
-print(dados["salario_formatado"])
-
 dados_telefone_formatados = (
     dados["telefone"].str.replace(r"\D", "", regex=True)
 )
@@ -53,6 +57,23 @@ dados_telefone_formatados = (
 dados.insert(7, "telefone_formatado", dados_telefone_formatados)
 dados["telefone_validado"] = (dados['telefone_formatado'].str.fullmatch(r"\d{10,13}"))
 
-print(dados.to_string())
+print(dados)
 
-print(f'Menor salário da base de dados: {dados["salario_formatado"].mean()}')
+dados["salario_formatado"] = dados["salario_formatado"].fillna(0.0)
+dados["modelo_trabalho"] = dados["modelo_trabalho"].fillna("home office")
+print(dados[["cpf_formatado", "modelo_trabalho", "salario_formatado","data_admissao"]])
+
+df_analise_salarial = dados[["nome", "salario_formatado", "data_admissao"]]
+# df_analise_salarial = df_analise_salarial.drop(columns=["data_admissao"])
+df_analise_salarial = df_analise_salarial.dropna()
+
+# df["coluna data"] = pd.to_datetime(df["data"], format="%Y-%d-%d")
+# nossa formatação atual 4/6/2026
+df_analise_salarial["data_admissao"] = pd.to_datetime(
+    df_analise_salarial["data_admissao"],
+    format="%d/%m/%Y"
+)
+filtro_por_data = df_analise_salarial[
+    df_analise_salarial["data_admissao"] > "01/01/2026"
+]
+print(filtro_por_data)
