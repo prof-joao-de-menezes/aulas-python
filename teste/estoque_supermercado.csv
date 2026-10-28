@@ -1,0 +1,51 @@
+nome,preco,quantidade,setor,data_compra,data_vencimento
+Leite Integral,R$ 5.99,50,Laticínios,20/10/2026,05/11/2026
+Pão Francês,0.99,100, Padaria ,27/10/2026,29/10/2026
+Manteiga,dez reais,15,Laticínios,25/10/2026,25/12/2026
+Queijo Mussarela,R$ 35.90,vinte,Laticínios,22/10/2026,30/10/2026
+Iogurte Morango,4.50,30, Laticínios,26/10/2026,31/10/2026
+Arroz 5kg,25.00,100,Merce  aria  ,15/10/2026,15/10/2027
+Feijão Preto,8.90,,Mercearia,20/10/2026,20/05/2027
+Macarrão Espaguete,4.50,50,  Mercearia,21/10/2026,21/04/2027
+Molho de Tomate,,40,Mercearia,25/10/2026,25/10/2027
+Óleo de Soja,R$ 7.99,60,Mercearia,22/10/2026,22/08/2027
+Açúcar Refinado,5.50,80,mercearia,26/10/2026,26/10/2028
+Café em Pó,15.90,45,Mercea  ria,20/10/2026,20/10/2027
+Biscoito Recheado,3.50,cem,Doces,25/10/2026,25/03/2027
+Chocolate em Barra,R$ 6.00,30,Doces,21/10/2026,21/05/2027
+Bala de Goma,2.00,,Doces,27/10/2026,27/11/2026
+Refrigerante Cola,8.99,120,Beb  idas,24/10/2026,24/04/2027
+Suco de Laranja,,50, Bebidas ,26/10/2026,02/11/2026
+Cerveja Pilsen,R$ 4.50,200,Be  bidas,20/10/2026,20/08/2027
+Água Mineral,1.99,150,Bebidas,23/10/2026,23/10/2028
+Vinho Tinto,R$ 45.00,20,Bebidas,15/10/2026,
+Maçã Fuji,9.90,40,Hort   ifruti,25/10/2026,30/10/2026
+Banana Prata,R$ 6.50,60,hor  tifrut   i,26/10/2026,31/10/2026
+Laranja Pera,4.50,,Horti fruti,24/10/2026,05/11/2026
+Alface Crespa,dois reais,25,Hortifruti,27/10/2026,31/10/2026
+Tomate Carmem,R$ 8.90,50,Hort   ifruti,25/10/2026,01/11/2026
+Cebola,5.50,40,Hortif  ruti,22/10/2026,15/11/2026
+Batata Inglesa,R$ 7.00,80,Hort  ifruti,23/10/2026,10/11/2026
+Cenoura,,35,Hortifruti,25/10/2026,05/11/2026
+Frango Inteiro,18.90,40,Açougue,25/10/2026,30/10/2026
+Carne Moída,25.00,30,Açougue,26/10/2026,29/10/2026
+Bife Ancho,R$ 45.90,15,Açougue,24/10/2026,01/11/2026
+Linguiça Toscana,19.90,,Açougue,22/10/2026,10/11/2026
+Peixe Tilápia,R$ 28.00,25,Peixaria,26/10/2026,29/10/2026
+Salmão,89.90,10,Peixaria,25/10/2026,31/10/2026
+Sabão em Pó,R$ 15.90,40,Limp eza,15/10/2026,15/10/2029
+Detergente Líquido,2.50,100,Li mpeza,20/10/2026,20/10/2028
+Amaciante,R$ 12.50,30, Limpeza ,22/10/2026,22/10/2028
+Desinfetante,8.00,45,Limpeza,24/10/2026,24/10/2028
+Água Sanitária,,60,Limpeza,26/10/2026,26/10/2028
+Esponja de Aço,R$ 3.50,80,Limpeza,21/10/2026,21/10/2030
+Papel Higiênico,18.90,50,Higi   ene,20/10/2026,20/10/2030
+Pasta de Dente,R$ 5.50,,Hi     giene,23/10/2026,23/10/2028
+Escova de Dentes,12.00,30,Hig     iene,25/10/2026,25/10/2030
+Sabonete em Barra,2.50,100,Hi  giene,26/10/2026,26/10/2029
+Shampoo,15.90,40,Higiene,22/10/2026,22/10/2028
+Condicionador,R$ 16.90,40,Higi  ene,22/10/2026,22/10/2028
+Fralda Descartável,45.00,25,Higiene,20/10/2026,20/10/2029
+Lenço Umedecido,12.90,,Higiene,24/10/2026,24/10/2028
+Ração para Cachorro,R$ 55.00,20,Pet Shop,15/10/2026,15/10/2027
+Areia para Gato,22.00,30,Pet Shop,20/10/2026,

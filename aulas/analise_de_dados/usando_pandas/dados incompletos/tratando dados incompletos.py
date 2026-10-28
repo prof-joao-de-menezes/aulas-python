@@ -82,4 +82,3 @@ filtro_por_data = df_analise_salarial[
     (df_analise_salarial["data_admissao"] <= "01/03/2026")
 ]
 print(dados.columns.tolist())
-print(filtro_por_data.info())
