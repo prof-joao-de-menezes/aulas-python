@@ -20,7 +20,6 @@ dados_telefone_formatados = (
 df_dados_despadronizados.insert(7, "numero_formatado", dados_telefone_formatados)
 df_dados_despadronizados["numero_validado"] = (df_dados_despadronizados['numero_formatado'].str.fullmatch(r"\d{10,13}"))
 
-
 # print(df_dados_despadronizados)
 # mudando dados inválidos dentro do Data Frame
 for index, linha in df_dados_despadronizados.iterrows():
